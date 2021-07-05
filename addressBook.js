@@ -61,6 +61,8 @@ let getContact = () => {
     return contactInput;
 };
 
+let countContacts = () => addressBookArr.reduce((total, contact) => total + 1, 0);
+
 let viewContacts = () => {
     addressBookArr.forEach(contact => console.log(contact.toString()));
 }
